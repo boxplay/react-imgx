@@ -9,22 +9,20 @@
 
 > 让图片渐进的加载
 
-react版本必须为17.x.x 以上。
-
 ## 支持
 
-* 务必：原图cdn地址是七牛云
+* 务必：原图cdn地址是七牛云,(应用了七牛云的图片格式处理)
 
 ## how to use?
 
 ``` jsx
 import React from 'react';
-import { Imgx } from '@kkb/imgx';
+import { Imgx } from 'boxplay-imgx';
 
 const DemoPage = ({ images }) => (
   <div>
     <Imgx
-      src={"https://img.kaikeba.com/platform/247103210202xrti.jpg"}
+      src={"https://img.xxxxxx.com/platform/247103210202xrti.jpg"}
       wrapperClassName={'cssName'} // 外层样式，必须定义宽高，这样才有动画渐变效果
       className={'cssName'} // img标签样式
       delayTime={1.3} // 动画持续时间
@@ -33,7 +31,7 @@ const DemoPage = ({ images }) => (
       errorImgUrl={"url"} // 图片加载失败后，显示的图片
       imgHitWidth={400} // 图片压缩宽度（等比压缩）
       domain={{
-        qiniu: ['img.kaikeba.com'], // 七牛域名
+        qiniu: ['img.xxxx.com'], // 七牛域名
         oss: ['image-demo.oss-cn-hangzhou.aliyuncs.com'], // oss域名
       }}
     />

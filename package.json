@@ -1,6 +1,6 @@
 {
-  "name": "@kkb/imgx",
-  "version": "4.4.2",
+  "name": "imgx",
+  "version": "1.0.0",
   "description": "imgx渐进式图片加载组件，支持react服务端渲染SSR",
   "scripts": {
     "start": "npm run dev",
@@ -18,23 +18,15 @@
   },
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
-  "publishConfig": {
-    "registry": "https://registry-npm.kaikeba.com/"
-  },
   "maintainers": [
-    "zhanzhiqiang",
-    "zhangding"
+    "dubin",
+    "boxplay"
   ],
   "keywords": [],
-  "author": {
-    "name": "tec",
-    "email": "zzq8297729@163.com",
-    "url": "https://www.jonhuu.com"
-  },
-  "homepage": "https://github.com/rdmix/imgx",
+  "homepage": "https://github.com/boxplay/react-imgx",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rdmix/imgx"
+    "url": "https://github.com/boxplay/react-imgx"
   },
   "files": [
     "build"
@@ -51,8 +43,8 @@
     "sanitize.css": "12.0.1"
   },
   "peerDependencies": {
-    "react": ">=17.0.0",
-    "react-dom": ">=17.0.0"
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {
     "@babel/core": "7.12.10",
@@ -102,8 +94,8 @@
     "postcss-loader": "4.2.0",
     "postcss-normalize": "9.0.0",
     "postcss-preset-env": "6.7.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "regenerator-runtime": "0.13.3",
     "rimraf": "3.0.2",
     "terser-webpack-plugin": "5.1.1",
